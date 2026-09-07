@@ -1,54 +1,81 @@
 import React from "react";
 
-export default function AdmissionCouponBanner() {
+export default function StudentTrustBanner() {
   return (
-    <section className="px-4 sm:px-6 py-6 bg-white">
+    <section className="px-4 sm:px-6 py-5 bg-white">
       <div className="max-w-[1240px] mx-auto">
-        <div className="relative overflow-hidden rounded-2xl border border-[#f6d7bd] bg-gradient-to-r from-[#fff7ef] via-white to-[#eef9fa] p-5 sm:p-6 shadow-[0_8px_30px_rgba(46,68,71,0.08)]">
-          
-          <div className="absolute -right-10 -top-10 w-28 h-28 rounded-full bg-[#f38e3e]/10"></div>
-          <div className="absolute -left-10 -bottom-10 w-24 h-24 rounded-full bg-[#008190]/10"></div>
+        <div className="relative overflow-hidden rounded-2xl border border-[#ccecef] bg-gradient-to-r from-[#f2fcfd] via-white to-[#f5fbff] px-5 py-5 sm:px-7 sm:py-6 shadow-[0_8px_30px_rgba(46,68,71,0.07)]">
 
-          <div className="relative flex flex-col md:flex-row md:items-center md:justify-between gap-5">
-            
-            <div className="flex items-start gap-4">
-              <div className="shrink-0 w-12 h-12 rounded-xl bg-[#fff0e2] flex items-center justify-center text-2xl">
-                🎁
+          {/* Decorative circles */}
+          <div className="absolute -right-10 -top-10 w-28 h-28 rounded-full bg-[#008190]/10" />
+          <div className="absolute -left-10 -bottom-10 w-24 h-24 rounded-full bg-[#f38e3e]/10" />
+
+          <div className="relative flex flex-col lg:flex-row lg:items-center lg:justify-between gap-6">
+
+            {/* Main trust message */}
+            <div className="flex items-center gap-4">
+
+              <div className="shrink-0 w-14 h-14 rounded-2xl bg-[#e7f8fa] flex items-center justify-center text-3xl">
+                🩺
               </div>
 
               <div>
-                <div className="inline-flex items-center rounded-full bg-[#f38e3e] text-white px-3 py-1 text-xs font-extrabold tracking-wide uppercase">
-                  EXCLUSIVE NEET ASPIRANT BENEFIT
+                <div className="flex items-center gap-2 flex-wrap">
+                  <span className="text-3xl sm:text-4xl font-black text-[#008190]">
+                    40,000+
+                  </span>
+
+                  <span className="text-sm sm:text-base font-bold text-[#1e3235]">
+                    NEET aspirants
+                  </span>
                 </div>
 
-                <h2 className="mt-2 text-xl sm:text-2xl font-extrabold text-[#1e3235]">
-                  Get a ₹199 College Admission Form Coupon
-                </h2>
-
-                <p className="mt-1 text-sm sm:text-base text-[#4a6468] leading-relaxed">
-                  Purchase the NEET-UG Guess Paper for ₹99 and receive an additional ₹199 coupon after purchase.
-                </p>
-
-                <p className="mt-2 text-xs sm:text-sm font-semibold text-[#008190]">
-                  Valid on eligible FormsADDA college admission form services.
+                <p className="mt-1 text-sm sm:text-base text-[#4a6468]">
+                  have chosen FormsADDA preparation resources
                 </p>
               </div>
             </div>
 
-            <div className="shrink-0 md:text-right">
-              <div className="text-xs font-bold uppercase tracking-wider text-[#6b7f82]">
-                Your Student Benefit
+            {/* Trust points */}
+            <div className="flex flex-wrap gap-3 lg:justify-end">
+
+              <div className="flex items-center gap-2 rounded-xl bg-white border border-[#dceff1] px-4 py-3">
+                <span className="text-lg">🧬</span>
+                <div>
+                  <div className="text-xs font-bold text-[#008190]">
+                    NEET Focused
+                  </div>
+                  <div className="text-xs text-[#5d7073]">
+                    Biology & Chemistry
+                  </div>
+                </div>
               </div>
 
-              <div className="text-3xl sm:text-4xl font-black text-[#f38e3e]">
-                ₹199
+              <div className="flex items-center gap-2 rounded-xl bg-white border border-[#dceff1] px-4 py-3">
+                <span className="text-lg">📖</span>
+                <div>
+                  <div className="text-xs font-bold text-[#008190]">
+                    NCERT Oriented
+                  </div>
+                  <div className="text-xs text-[#5d7073]">
+                    Revision focused
+                  </div>
+                </div>
               </div>
 
-              <div className="text-xs font-bold text-[#008190]">
-                ADMISSION COUPON
+              <div className="flex items-center gap-2 rounded-xl bg-white border border-[#dceff1] px-4 py-3">
+                <span className="text-lg">⚡</span>
+                <div>
+                  <div className="text-xs font-bold text-[#008190]">
+                    Instant Access
+                  </div>
+                  <div className="text-xs text-[#5d7073]">
+                    Digital PDF
+                  </div>
+                </div>
               </div>
+
             </div>
-
           </div>
         </div>
       </div>
