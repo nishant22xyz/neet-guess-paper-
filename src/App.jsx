@@ -49,7 +49,7 @@ export default function App() {
         <Hero onOpenSample={handleOpenSampleModal} />
 
         {/* ₹199 College Admission Coupon */}
-        <AdmissionCouponBanner />
+        <StudentTrustBanner />
 
         {/* 3. 4-Card Trust Strip */}
         <TrustStrip />
