@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Header from "./components/Header";
 import Hero from "./components/Hero";
-import AdmissionCouponBanner from "./components/AdmissionCouponBanner";
+import StudentTrustBanner from "./components/AdmissionCouponBanner";
 import TrustStrip from "./components/TrustStrip";
 import WhyGuessPaper from "./components/WhyGuessPaper";
 import SubjectCards from "./components/SubjectCards";
